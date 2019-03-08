@@ -53,7 +53,7 @@ var info = {
         sender: 'Savannah Fisher',
         subject: 'Walk later?',
         date: 'Mar 9',
-        emailText: 'Bark! Bark, bark. Bark. Whine. Bark?'
+        emailText: 'Bark! Bark, bark. Bark. Whine. I want to go for a walk. Bark? Will you take me on a walk?'
     }
 }
 
