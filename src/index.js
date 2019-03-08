@@ -4,7 +4,7 @@ import './index.css';
 
 function Email(props) {
     return (
-        <div>
+        <div className="email">
             <Sender sender={props.info.email2.sender}/>
             <Subject subject={props.info.email2.subject}/>
             <Date date={props.info.email2.date}/>
@@ -15,28 +15,28 @@ function Email(props) {
 
 const Sender = (props) => {
     return (
-        <div>
+        <div className="sender">
             {props.sender}
         </div>
     )
 }
 const Subject = (props) => {
     return (
-        <div>
-            {props.subject}
+        <div className="subject">
+            Subject: {props.subject}
         </div>
     )
 }
 const Date = (props) => {
     return (
-        <div>
+        <div className="date">
             {props.date}
         </div>
     )
 }
 const EmailText = (props) => {
     return (
-        <div>
+        <div className="email-text">
             {props.emailText}
         </div>
     )
@@ -45,13 +45,13 @@ const EmailText = (props) => {
 var info = {
     email1: {
         sender: 'Steven Fisher',
-        subject: 'Would you like to go to the mall later?',
+        subject: 'Mall later?',
         date: 'Mar 8',
         emailText: 'I guess I laid it all out there in the subject, huh?'
     },
     email2: {
         sender: 'Savannah Fisher',
-        subject: 'Would you like to go to for a walk later?',
+        subject: 'Walk later?',
         date: 'Mar 9',
         emailText: 'Bark! Bark, bark. Bark. Whine. Bark?'
     }
