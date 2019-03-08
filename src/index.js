@@ -5,10 +5,10 @@ import './index.css';
 function Email(props) {
     return (
         <div>
-            <Sender sender={props.info.email1.sender}/>
-            <Subject subject={props.info.email1.subject}/>
-            <Date date={props.info.email1.date}/>
-            <EmailText emailText={props.info.email1.emailText}/>
+            <Sender sender={props.info.email2.sender}/>
+            <Subject subject={props.info.email2.subject}/>
+            <Date date={props.info.email2.date}/>
+            <EmailText emailText={props.info.email2.emailText}/>
         </div>
     )
 }
@@ -48,6 +48,12 @@ var info = {
         subject: 'Would you like to go to the mall later?',
         date: 'Mar 8',
         emailText: 'I guess I laid it all out there in the subject, huh?'
+    },
+    email2: {
+        sender: 'Savannah Fisher',
+        subject: 'Would you like to go to for a walk later?',
+        date: 'Mar 9',
+        emailText: 'Bark! Bark, bark. Bark. Whine. Bark?'
     }
 }
 
